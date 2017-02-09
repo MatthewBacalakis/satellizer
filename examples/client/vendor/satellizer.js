@@ -939,7 +939,7 @@ var HttpProviderConfig = (function () {
 }());
 
 angular.module('satellizer', [])
-    .provider('$auth', ['SatellizerConfig', function (SatellizerConfig) { return new AuthProvider(SatellizerConfig); }])
+    .provider('SatellizerAuth', ['SatellizerConfig', function (SatellizerConfig) { return new AuthProvider(SatellizerConfig); }])
     .constant('SatellizerConfig', Config.getConstant)
     .service('SatellizerShared', Shared)
     .service('SatellizerLocal', Local)

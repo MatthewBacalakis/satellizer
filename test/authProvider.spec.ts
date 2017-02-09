@@ -147,7 +147,7 @@ describe('AuthProvider', () => {
     expect(config.providers.goodreads.url).toBe('/auth/goodreads');
   });
 
-  describe('$auth service', () => {
+  describe('SatellizerAuth service', () => {
 
     it('should be defined', () => {
       expect(auth).toBeDefined();

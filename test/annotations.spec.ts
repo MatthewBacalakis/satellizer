@@ -8,8 +8,8 @@ describe('angular annotations', () => {
     angular.mock.inject.strictDi(true);
   });
 
-  it('should create the injector without errors', angular.mock.inject(['$auth', ($auth) => {
-    expect($auth).toBeTruthy();
+  it('should create the injector without errors', angular.mock.inject(['SatellizerAuth', (SatellizerAuth) => {
+    expect(SatellizerAuth).toBeTruthy();
   }]));
 
 });
